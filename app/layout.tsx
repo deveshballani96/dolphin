@@ -1,5 +1,6 @@
 import '@/app/ui/global.css';
 import { barlowSemiCondensed } from '@/app/ui/fonts';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export default function RootLayout({
   children,
