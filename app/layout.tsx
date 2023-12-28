@@ -12,6 +12,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${barlowSemiCondensed.className} antialiased`}>
+        <SpeedInsights />
         {children}
       </body>
     </html>
