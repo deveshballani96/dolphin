@@ -1,8 +1,8 @@
 import '@/app/ui/global.css';
 import { barlowSemiCondensed } from '@/app/ui/fonts';
 
-// Below code is used for Speed Insights
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function RootLayout({
   children,
@@ -12,8 +12,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${barlowSemiCondensed.className} antialiased`}>
-        <SpeedInsights />
         {children}
+
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
